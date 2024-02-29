@@ -1,0 +1,44 @@
+body {
+    background-color: #508edf;
+}
+h1 {
+    text-align: center;
+}
+form {
+    width: 50vw;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0000004d;
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #6b86e7;
+    transition: all 0.3s ease;
+}
+input:invalid {
+    border: 2px solid #f00;
+    animation: error forwards 0.3s ease;
+}
+@keyframes error {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(2px);
+    }
+    50% {
+        transform: translateX(-2px);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
